@@ -119,7 +119,7 @@ class _MRZPictureScannerState extends State<MRZPictureScanner> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 130, 182, 226),
       appBar: AppBar(
-        title: Text('MRZ Picture Scanner'),
+        title: const Text('MRZ Scanner', style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.blue,),
       body: Column(
         children: [

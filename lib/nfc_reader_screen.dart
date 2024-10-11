@@ -1,5 +1,3 @@
-// Created by Crt Vavros, copyright © 2022 ZeroPass. All rights reserved.
-// ignore_for_file: prefer_adjacent_string_concatenation, prefer_interpolation_to_compose_strings
 
 import 'package:convert/convert.dart';
 import 'package:flutter/cupertino.dart';
@@ -654,7 +652,7 @@ class _MrtdHomePageState extends State<MrtdHomePage> {
   Scaffold _buildPage(BuildContext context) => Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text('NFC Scan'),
+          title: const Text('NFC Scan', style: TextStyle(color: Colors.white,)),
           backgroundColor: Colors.blue,
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
