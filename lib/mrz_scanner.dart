@@ -68,7 +68,6 @@ class _MRZPictureScannerState extends State<MRZPictureScanner> {
   Future<void> _processCapturedImage(File imageFile) async {
     final inputImage = InputImage.fromFile(imageFile);
 
-    // Process the image using ML Kit to detect text
     final RecognisedText recognisedText = await textDetector.processImage(inputImage);
 
 
@@ -79,8 +78,6 @@ class _MRZPictureScannerState extends State<MRZPictureScanner> {
       setState(() {
       });
       InfoInput input = InfoInput(mrzCode);
-
-      // Navigate to a new page to display the MRZ code or handle it further
       Navigator.push(
         context,
         MaterialPageRoute(
