@@ -1,6 +1,13 @@
 # id_scanner
 
 A new Flutter project.
+Để có thể chạy được sản phẩm, hãy chạy lệnh dưới ở terminal
+
+```
+flutter pub get
+flutter run
+```
+
 
 ## Getting Started
 
